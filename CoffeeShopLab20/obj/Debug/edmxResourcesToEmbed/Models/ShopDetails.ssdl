@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="coffeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="shop_details">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="coffee_shop" Type="text" Nullable="false" />
+    <Property Name="address" Type="text" />
+    <Property Name="city" Type="text" />
+    <Property Name="state" Type="text" />
+    <Property Name="zip" Type="int" Nullable="false" />
+    <Property Name="phone" Type="int" />
+    <Property Name="latte_price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="coffeeModelStoreContainer">
+    <EntitySet Name="shop_details" EntityType="Self.shop_details" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

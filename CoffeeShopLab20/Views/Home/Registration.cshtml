@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<script src="~/Content/JavaScript.js"></script>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body> 
+    <h2><b>Please fill in the form to register.</b></h2>
+    <form action="Success" method="post">
+        First Name:<br>
+        <input type="text" name="first_name" value="" required>
+        <br>
+        Last Name:<br>
+        <input type="text" name="last_name" value="" required>
+        <br>
+        Email:<br>
+        <input type="email" name="email" value="">
+        <br>
+        Phone:<br>
+        <input type="number" name="phone" value="">
+        <br>
+        Password:<br>
+        <input type="password" name="password" id="password" required>
+        <br>
+        Password Confirmation:<br>
+        <input type="password" name="passwordconfirmation"  id="passwordconfirmation" onkeyup="checkPass(); return false;">
+        <span id="confirmMessage" class="confirmMessage"></span>
+        <br /> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
